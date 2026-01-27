@@ -18,4 +18,5 @@ production:
   <<: *default
   host: prod-sql.drdr.internal
   database: app_prod
-  pool: 20
+  pool: 30
+  timeout: 10000
