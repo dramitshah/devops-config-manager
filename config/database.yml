@@ -1,0 +1,21 @@
+# Database Configuration
+default: &default
+  adapter: sqlserver
+  pool: 5
+  timeout: 5000
+
+development:
+  <<: *default
+  host: localhost
+  database: app_dev
+  
+uat:
+  <<: *default
+  host: uat-sql.drdr.internal
+  database: app_uat
+
+production:
+  <<: *default
+  host: prod-sql.drdr.internal
+  database: app_prod
+  pool: 20

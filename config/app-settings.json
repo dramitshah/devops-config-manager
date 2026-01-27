@@ -1,0 +1,13 @@
+{
+  "appName": "ConfigManager",
+  "version": "1.0.0",
+  "features": {
+    "enableCache": true,
+    "enableLogging": true,
+    "maxConnections": 100
+  },
+  "api": {
+    "timeout": 30,
+    "retryCount": 3
+  }
+}
