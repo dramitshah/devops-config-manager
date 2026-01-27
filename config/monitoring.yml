@@ -1,0 +1,19 @@
+# Monitoring Configuration
+monitoring:
+  enabled: true
+  
+  prometheus:
+    scrape_interval: 15s
+    evaluation_interval: 15s
+    
+  alerting:
+    alert_manager:
+      - url: "http://alertmanager:9093"
+      
+  metrics:
+    - name: cpu_usage
+      threshold: 80
+    - name: memory_usage
+      threshold: 85
+    - name: disk_usage
+      threshold: 90
