@@ -1,0 +1,9 @@
+# Kubernetes Configuration
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+data:
+  DATABASE_HOST: "prod-sql.drdr.internal"
+  LOG_LEVEL: "info"
+  CACHE_ENABLED: "true"
