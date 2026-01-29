@@ -16,7 +16,7 @@ uat:
 
 production:
   <<: *default
-  host: prod-sql.drdr.internal
+  host: prod-sql-cluster.drdr.internal
   database: app_prod
   pool: 50
   timeout: 10000
